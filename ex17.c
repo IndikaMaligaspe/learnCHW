@@ -119,7 +119,15 @@ void Database_set(struct Connection *conn, int id, const char *name, const char 
 		die("Email copy failed");
 }
 
-
+void Database_get(struct Connection *conn, int id)
+{
+	struct Address *addr =  &conn->db->rows[id];
+	if(addr->set){
+		Address_print(addr);
+	} else {
+		dir("ID is not set");
+	}
+}
 int main(int argc, char *argv[]){
 	return 0;
 }
