@@ -128,6 +128,13 @@ void Database_get(struct Connection *conn, int id)
 		dir("ID is not set");
 	}
 }
+
+void Database_delete(struct Connection *conn, int id)
+{
+	struct Address addr = {.id = id, .set = 0};
+	conn->db->rows[id] = addr;
+}
+
 int main(int argc, char *argv[]){
 	return 0;
 }
