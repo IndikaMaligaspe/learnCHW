@@ -44,9 +44,11 @@ void Address_print(struct Address *addr)
 
 void Database_load(struct Connection *conn)
 {
+	printf("TTT Loading database..");
 	int rc = fread(conn->db, sizeof(struct Database),1,conn->file);
 	if (rc != 1)
 		die("Failed to load database.");
+	printf("TTT Loaded database..")
 }
 
 struct Connection *Database_open(const char *filename, char mode)
@@ -168,6 +170,7 @@ int main(int argc, char *argv[]){
 
 		switch (action) {
 			case 'c':
+				printf("TTT Inside calling crear!");
 				Database_create(conn);
 				Database_write(conn);
 				break;
