@@ -79,6 +79,7 @@ void Database_close(struct Connection *conn)
 void Database_write(struct Connection *conn)
 {
 	//what is rewind
+	printf("TTT Starting to write to database...");
 	rewind(conn->file);
 	int rc = fwrite(conn->db,sizeof(struct Database),1,conn->file);
 
@@ -93,6 +94,7 @@ void Database_write(struct Connection *conn)
 
 void Database_create(struct Connection *conn)
 {
+	printf("TTT Starting to create a database...");
 	int i = 0;
 	for (i = 0; i < MAX_ROWS; i++){
 		//make a prototype to initialize it
