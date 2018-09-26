@@ -48,7 +48,7 @@ void Database_load(struct Connection *conn)
 	int rc = fread(conn->db, sizeof(struct Database),1,conn->file);
 	if (rc != 1)
 		die("Failed to load database.");
-	printf("TTT Loaded database..")
+	printf("TTT Loaded database..");
 }
 
 struct Connection *Database_open(const char *filename, char mode)
