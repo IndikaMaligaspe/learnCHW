@@ -34,7 +34,7 @@ void die(const char *message)
 	} else {
 		printf("ERROR: %s \n",message);
 	}
-	exit;
+	exit(0);
 }
 
 void Address_print(struct Address *addr)
