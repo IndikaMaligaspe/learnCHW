@@ -158,8 +158,11 @@ int main(int argc, char *argv[]){
 		if (argc < 3)
 			die("USAGE: ex17 <dbfile> <action> [action params]");
 
+		printf("File Name..");	
 		char *filename = argv[1];
+		printf("Action..");
 		char action = argv[2][0];
+		printf("Connection.");
 		struct Connection *conn =  Database_open(filename, action);
 		int id =0;
 
