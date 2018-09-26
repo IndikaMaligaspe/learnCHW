@@ -163,11 +163,10 @@ int main(int argc, char *argv[]){
 		struct Connection *conn =  Database_open(filename, action);
 		int id =0;
 
-		if (argc > 3) 
-			id = atoi(argv[3]);
-		if(id >= MAX_ROWS) 
-			die("There is not mane record.");
+		if (argc > 3) id = atoi(argv[3]);
+		if (id >= MAX_ROWS) die("There is not many record.");
 
+		printf("Going into switch..");
 		switch (action) {
 			case 'c':
 				printf("TTT Inside calling crear!");
