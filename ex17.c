@@ -172,7 +172,7 @@ int main(int argc, char *argv[]){
 
 		printf("Going into switch..");
 		switch (action) {
-			case 'o':
+			case 'c':
 				printf("TTT Inside calling crear!");
 				Database_create(conn);
 				Database_write(conn);
