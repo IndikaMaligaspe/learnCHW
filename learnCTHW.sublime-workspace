@@ -1,0 +1,456 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Data",
+				"Database_close"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"rows",
+				"MAX_ROWS"
+			],
+			[
+				"str",
+				"struct	struct"
+			],
+			[
+				"MA",
+				"MAX_ROWS"
+			],
+			[
+				"Dt",
+				"Database_create"
+			],
+			[
+				"d",
+				"db"
+			],
+			[
+				"print",
+				"print_Person"
+			],
+			[
+				"pr",
+				"print_Person"
+			],
+			[
+				"Per",
+				"Person_destroy"
+			],
+			[
+				"per",
+				"Person_destroy"
+			],
+			[
+				"Person",
+				"Person_print"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"Packa",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 118.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/workspace/Bonotel/rezg-bonotel-xml-search/rezg-bonotel-xml-search-connector-utility/.gitignore",
+		"/C/workspace/Bonotel/rezg-bonotel-xml-search/rezg-bonotel-xml-search-connector-utility/src/main/java/bonotel/server/common/AuthToken.java",
+		"/C/workspace/Bonotel/rezg-bonotel-xml-search/rezg-bonotel-xml-search-connector-utility/src/main/java/bonotel/server/common/ClearStaticVariables.java",
+		"/C/workspace/Bonotel/rezg-bonotel-xml-search/rezg-bonotel-xml-search-core/src/main/java/bonotel/server/search/core/ExternalHotelSearch.java",
+		"/C/workspace/Bonotel/rezg-bonotel-xml-search/rezg-bonotel-xml-search-connector-utility/src/main/java/bonotel/server/common/ServiceData.java",
+		"/C/workspace/Learning/security_essentials.txt",
+		"/C/workspace/Learning/c/ex17.c",
+		"/C/workspace/Learning/c/TestMemory.java",
+		"/C/workspace/Learning/c/.gitignore",
+		"/C/workspace/Learning/c/ex16_extra.c",
+		"/C/workspace/Learning/c/ex16.c",
+		"/C/workspace/Learning/c/ex1.c",
+		"/C/workspace/securmatic/EC2/Advitair_OSSEC_Key.txt",
+		"/C/workspace/securmatic/maticwatch/db_scripts/events_table.xml",
+		"/C/workspace/securmatic/maticwatch/db_scripts/events_table.csv",
+		"/C/Projects/Profesional/Key Projects/Security/Internal/MailServer/clamscan_report.txt",
+		"/C/Projects/Profesional/Key Projects/Security/Internal/MailServer/alert",
+		"/C/Projects/Profesional/Key Projects/Security/Internal/MailServer/snort.log.1522137165",
+		"/C/Projects/Securmatic/OSSIM - Plugins/OSSEC/ossec-single-line.cfg",
+		"/C/Users/Indika/AppData/Local/Temp/log-1",
+		"/C/Projects/Securmatic/OSSIM - Plugins/OSSEC/indi_test.cfg",
+		"/C/Users/Indika/Desktop/synergyconfiig",
+		"/C/Users/Indika/Documents/ONS Test/User 6000/user6000",
+		"/C/Users/Indika/Documents/ONS Test/User 1000/user1000.txt",
+		"/C/Users/Indika/Documents/ONS Test/User 6000/user 6000 testadmin",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Projects/Securmatic/OSSIM - Plugins/rezg/amzapp.cfg",
+		"/C/Projects/Securmatic/OSSIM - Plugins/rezg/amzapp.cfg.txt",
+		"/C/Projects/Securmatic/OSSIM - Plugins/rezg/rezglog.cfg",
+		"/C/Users/Indika/Documents/SynKernelDiag2017-11-08_14-20-35.log",
+		"/C/Users/Indika/.ssh/id_rsa.pub",
+		"/C/Users/Indika/.ssh/id_rsa",
+		"/C/workspace/securmatic/maticwatch/os-sim/debian/ossim-framework.install",
+		"/C/Books/Architecture/Software architecture",
+		"/C/Development/Python/testThusitha/testConnect.py",
+		"/C/Development/Python/Learning/PyDownloader/pydownloader.py",
+		"//192.168.1.7/sharedWindows/text.txt",
+		"//192.168.1.4/sharedWindows/text.txt",
+		"/C/Projects/Securmatic/outsource/rebranding/ossim_setup.conf",
+		"/C/Projects/Securmatic/outsource/rebranding/menu.cfg",
+		"/C/Projects/Securmatic/outsource/rebranding/menu_mysql.cfg",
+		"/C/Projects/Securmatic/outsource/rebranding/menu_network.cfg",
+		"/C/Projects/Securmatic/outsource/rebranding/menu_network_ami.cfg",
+		"/C/Users/Indika/Downloads/INSTALL.Debian.txt",
+		"/C/Projects/Profesional/Key Projects/Building an Outstanding System (RezPackage_V4)/Outsourcing/CMS Module/HotelAvailabilityRS.json",
+		"/C/Projects/Securmatic/Server-Information",
+		"/C/Projects/Profesional/Key Projects/Building an Outstanding System (RezPackage_V4)/Outsourcing/CMS Module/HotelDetailsRS.json",
+		"/C/Development/securematic/OSSIM/findmatch_texts.txt/workspace/findmatch_texts.txt",
+		"//192.168.1.5/ossim/source/work/rebrand_ossim/src/config/ossim_rebrand_config.yaml",
+		"/C/Users/Indika/Downloads/0292E005A19F4A51A487398E0429CC5A.png",
+		"/C/Development/securematic/OSSIM/rsyslog/aws.conf",
+		"//192.168.1.106/ossim/rebranding/May-2017/rebranded/menu.cfg",
+		"//192.168.1.106/ossim/rebranding/May-2017/rebranded/ossim_setup.conf",
+		"//192.168.1.106/ossim/rebranding/May-2017/rebranded/menu_network_ami.cfg",
+		"//192.168.1.106/ossim/rebranding/May-2017/rebranded/menu_network.cfg",
+		"/C/Projects/Securmatic/MaticPortal Replication/Python libraries for MySQL replication",
+		"//192.168.1.106/ossim/rebranding/May-2017/original/etc.issue/issue",
+		"//192.168.1.106/ossim/source/work/rebrand_ossim/README.txt",
+		"//192.168.1.106/ossim/rebranding/May-2017/original/etc.issue/motd.tail",
+		"//192.168.1.106/ossim/rebranding/May-2017/rebranded/menu_mysql.cfg",
+		"/C/Development/securematic/OSSIM/rsyslog/listen.conf",
+		"//192.168.1.7/ossim/rebranding/May-2017/rebranded/menu.cfg",
+		"/C/Development/rezpack/documentation/docs/Services/Microservice Service Breakup.md",
+		"//192.168.1.2/sharedWindows/queries",
+		"//192.168.1.4/ossim/source/work/stats-about-find-results",
+		"//192.168.1.4/ossim/source/work/Alienvault-keyword-found",
+		"/C/Development/rezpack/hotel_rates_producer/src/main/java/rezg/rezos/producers/Controller.java",
+		"//192.168.1.250/UserFolders/Indika/Publisher_tbl/subscribersstatus.sql",
+		"/C/Development/rezpack/hotel-inventory-rate-reference-service/gradle/build-dev.gradle",
+		"/C/Development/rezpack/hotel-inventory-rate-reference-service/build.gradle",
+		"/C/Development/rezpack/hotel-inventory-rate-reference-service/gradle.properties",
+		"/C/Development/rezpack/hotel-inventory-rate-reference-service/src/main/java/rezg/hotel/inventoryrates/reference/HotelInventoryRateReferenceServiceApplication.java",
+		"/C/Development/rezpack/hotel-inventory-rate-reference-service/src/main/java/rezg/hotel/inventoryrates/reference/controller/HotelInventoryRateReferenceController.java",
+		"/C/Development/rezpack/hotel-inventory-service/gradle/build-dev.gradle",
+		"/C/Development/rezpack/hotel-inventory-service/build.gradle",
+		"/C/Development/rezpack/hotel-rates-service/build.gradle",
+		"/C/Development/rezpack/hotel-rates-service/settings.gradle",
+		"/C/Development/rezpack/hotel-rates-service/gradle/build-dev.gradle",
+		"//192.168.1.250/UserFolders/Soumiya/New folder/hotel-rates-service/build.gradle",
+		"/C/Development/Microsoft/C#_Mono/helloWin.cs",
+		"/C/Development/Microsoft/C#_Mono/TlsTest.cs",
+		"/C/Development/Microsoft/C#_Mono/hello.cs",
+		"/C/Projects/Profesional/Key Projects/Building an Outstanding System (RezPackage_V4)/ActionItems for MicroServiceaAndContinuesDelivery",
+		"/C/Projects/Securmatic/OSSIM - Plugins/rezg/amzapp.txt",
+		"/C/Development/Python/Learning/Pluralsight/flask/6-flask-micro-framework-intro-exercise-files/after/thermos/thermos/views.py",
+		"/C/Development/Python/Learning/Pluralsight/flask/6-flask-micro-framework-intro-exercise-files/after/thermos/thermos/templates/base.html",
+		"//192.168.1.5/sharedWindows/queries",
+		"/C/Development/Python/Learning/Pluralsight/flask/5-flask-micro-framework-intro-exercise-files/after/thermos/thermos/models.py",
+		"/C/Development/Python/Learning/Pluralsight/flask/5-flask-micro-framework-intro-exercise-files/after/thermos/thermos/__init__.py",
+		"/C/Development/Python/Learning/Pluralsight/flask/5-flask-micro-framework-intro-exercise-files/after/thermos/thermos/thermos.py",
+		"/C/Development/Python/Learning/Pluralsight/flask/5-flask-micro-framework-intro-exercise-files/after/thermos/manage.py",
+		"/C/Development/Python/Learning/Pluralsight/flask/5-flask-micro-framework-intro-exercise-files/after/thermos/thermos/views.py",
+		"/C/Development/Python/Learning/Pluralsight/flask/6-flask-micro-framework-intro-exercise-files/after/thermos/manage.py",
+		"/C/Development/Python/Learning/Pluralsight/flask/6-flask-micro-framework-intro-exercise-files/after/thermos/thermos/__init__.py",
+		"/C/Development/Python/Learning/Pluralsight/flask/3-flask-micro-framework-intro-exercise-files/after/thermos/thermos/__init__.py",
+		"/C/Development/Python/Learning/Pluralsight/flask/3-flask-micro-framework-intro-exercise-files/after/thermos/thermos/thermos.py",
+		"/C/Development/rezpack/documentation/docs/Services/Bohoda.md",
+		"//192.168.1.3/sharedWindows/queries",
+		"/C/Development/securematic/OSSIM/45_32_202_119/decoder.xml",
+		"/C/Development/securematic/maticserver/docs/sample_xml_1.xml",
+		"/C/Development/securematic/OSSIM/45_32_194_94/secure",
+		"/C/Development/securematic/OSSIM/45_32_202_119/ossec.conf",
+		"/C/Development/rezpack/bohoda/build.gradle",
+		"/C/Users/Indika/Desktop/test.html",
+		"/C/Projects/Profesional/Key Projects/Happy Bookings/PICC/HAR for CoalaPay.txt",
+		"/C/Development/rezpack/cart-service/.settings/org.eclipse.wst.common.component",
+		"/C/Projects/Profesional/Key Projects/Happy Bookings/configdetails.txt",
+		"/C/Users/Indika/Desktop/temp_car_location_list.json",
+		"/C/Users/Indika/Desktop/task.json",
+		"/C/Projects/Profesional/Key Projects/Happy Bookings/PICC/PICC/autocomplete.js",
+		"/C/Projects/Profesional/Key Projects/Happy Bookings/PICC/PICC/scripts.js",
+		"/C/workspace/go/src/helloworld/helloworld.go",
+		"//192.168.1.250/UserFolders/Subodha/PINGAN/live-home/home.html",
+		"/C/Projects/Profesional/Key Projects/Happy Bookings/PingAn/PALifePay Demo 0419/PALifePay Demo 0419/PALifePay.js",
+		"/C/Projects/Profesional/Key Projects/Happy Bookings/PingAn/com/paic/palife/common/util/encry/la/LASecurityUtils.class",
+		"/C/UbuntuShare/Pluralsight - Hands-on Ansible/Exercise files/handsonansible/6-hands-on-ansible-m6-exercise-files/templates/httpd.j2",
+		"/C/UbuntuShare/Pluralsight - Hands-on Ansible/Exercise files/handsonansible/6-hands-on-ansible-m6-exercise-files/templates/index.j2",
+		"/C/UbuntuShare/Pluralsight - Hands-on Ansible/Exercise files/handsonansible/6-hands-on-ansible-m6-exercise-files/web_db.yaml",
+		"/C/UbuntuShare/Pluralsight - Hands-on Ansible/Exercise files/handsonansible/7-hands-on-ansible-m7-exercise-files/exercise_7.1/webservers.yml",
+		"/C/Users/Indika/Downloads/alarm.txt",
+		"/C/Projects/Profesional/Key Projects/Bonotel/Incidents/20-12-2015-ONS/httpd-balancer.conf",
+		"/C/Projects/Profesional/Key Projects/Bonotel/Incidents/20-12-2015-ONS/server_bc_app1_n1_ws0.txt",
+		"/C/Projects/Profesional/Key Projects/Bonotel/Incidents/20-12-2015-ONS/server.txt",
+		"/C/Users/Indika/Documents/id_rsa/id_rsa",
+		"/C/Users/Indika/Documents/id_rsa/id_rsa.pub",
+		"/C/Python/Suppoort/setuptools.py",
+		"/C/Projects/Profesional/Key Projects/Bonotel/Incidents/20-12-2015-ONS/hapgproxy.cfg",
+		"/C/Python/Suppoort/pip.py"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"buildAvailabilityMap",
+			"mappingMap",
+			"resusltsList",
+			"executeXml",
+			"ExternalHo",
+			"Database_open",
+			"TTT",
+			")\n",
+			"TTT",
+			"Database_open",
+			"Database_create",
+			"Database_load",
+			"IES",
+			"trigge",
+			"maticportal",
+			"?        S      0:11 venv/bin/python2 replication_service/consumers/rabbitMQ_consumer.py replication_service/configs/consumer.yaml",
+			"?        S      0:00 venv/bin/python2 replication_service/consumers/rabbitMQ_consumer.py replication_service/configs/consumer.yaml",
+			"conf",
+			"Alarm::",
+			"http://45.77.116.149:5000/drilldowns/groupedEvents?sensor_id=930DF2E191C146AEB8FDDBE93B8FD350&plugin_ids=90011%2C90012%2C90050&siem_tableId=&data_source=&product_type=&ip_reputation_activity=&risk=&event_category=&ip_reputation_severity=&start=2018-06-18+00%3A00%3A00&end=2018-06-24+23%3A59%3A59&event_type=byproduct&event_id=&limit=50&offset=0",
+			"<\\/td>\\n\\t<td>",
+			"\\n<tr>\\n\\t<td>",
+			"\\t\\t\\t\\t\\t\\t",
+			"malw",
+			"netfun",
+			"event_id",
+			"status",
+			"event_type=event",
+			"0026",
+			"Successful sudo to ROOT executed",
+			"log",
+			"5301",
+			"5715",
+			"Accepted publickey\npublickey",
+			"Accepted publickey\nAccepted publickey",
+			"5715",
+			"Gene",
+			"User missed the password to change UID",
+			"User m",
+			"Invalid",
+			"Invalid user",
+			"session opened for",
+			"?P<rule_id>",
+			"(?P<rule_id>\\d+",
+			"5710",
+			"SSH failed login attempts",
+			"plugin_id={translate($rule_id)}",
+			"5301",
+			"5013",
+			"{translate($rule_id)}",
+			"5710",
+			"5301",
+			"yy",
+			"null",
+			"1504397338",
+			"	JSESSIONID=E9B12909C04B6950C1B16D700A54B6D6.n4.app1.cc.prod.avianca.usw1.aws; Path=/avianca; SecureJSESSIONID=F7FACD81CEA875C1AEBFF13D2840EA79.n4.app1.cc.prod.avianca.usw1.aws; Path=/avianca; Secure\nF7FACD81CEA875C1AEBFF13D2840EA79",
+			"F7FACD81CEA875C1AEBFF13D2840EA79",
+			"20",
+			"name",
+			"alienvaul",
+			"dist",
+			"web",
+			"Copyright",
+			"Copy",
+			"backup.",
+			"access",
+			"AlienVault",
+			"host",
+			"Securmatic",
+			"securmatic",
+			"securematic",
+			"root",
+			"indika",
+			"portalStaticPath",
+			"/",
+			"\\\\\\\\",
+			"\\\\*",
+			"/",
+			"\\",
+			"/",
+			"\\",
+			"/",
+			"Ceylinco",
+			"Celinco",
+			"alienvault.alarm",
+			"alarm",
+			"alienvault.trg_alarm",
+			".96",
+			"'alienvault_n.event': 'test',",
+			"test",
+			"table",
+			"event_acl",
+			"table",
+			"`)",
+			"hex(`",
+			")'",
+			")`",
+			"'hex(",
+			"columnb_name",
+			"')",
+			"maticagent_replicate.replicate_tables",
+			"no",
+			"yes",
+			"curtis",
+			"$tar",
+			"\n",
+			"validate",
+			"fullName",
+			"米",
+			"profile_authe",
+			"payme",
+			"DLR12",
+			"{{",
+			"local",
+			"framework",
+			"000556a6d58711e58f3f56002613da16",
+			"zc",
+			"libgda",
+			"Please find the below requested IPs\n10.209.34.29",
+			"104.130.33.253",
+			"lb",
+			"load",
+			"time"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"alienvault",
+			"",
+			"_conf",
+			":",
+			"",
+			"plugin_id=90011",
+			"90011",
+			"\"1\"",
+			"Alienvault",
+			"alienvault",
+			"//",
+			"/*",
+			"\\\\",
+			")",
+			"(",
+			"`)",
+			"hex(`",
+			"column_name",
+			"');",
+			"maticagent_replicate.replicate_table_meta_data"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 286.0,
+	"status_bar_visible": true
+}

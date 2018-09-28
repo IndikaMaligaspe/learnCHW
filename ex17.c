@@ -8,12 +8,15 @@
 #define MAX_DATA 512
 #define MAX_ROWS 100
 
+
 struct  Address
 {
-	int id;
 	int set;
 	char name[MAX_DATA];
 	char email[MAX_DATA];
+	int id;
+
+
 };
 
 struct Database
@@ -27,13 +30,16 @@ struct Connection
 	struct Database *db;
 };
 
-void die(const char *message)
+void Database_close(struct Connection *conn);
+
+void die(const char *message,struct Connection *conn)
 {
 	if (errno){
 		perror(message);
 	} else {
 		printf("ERROR: %s \n",message);
 	}
+	Database_close(conn);
 	exit(0);
 }
 
@@ -44,24 +50,23 @@ void Address_print(struct Address *addr)
 
 void Database_load(struct Connection *conn)
 {
-	printf("TTT Loading database..");
+	printf("TTT Loading database.. \n");
 	int rc = fread(conn->db, sizeof(struct Database),1,conn->file);
 	if (rc != 1)
-		die("Failed to load database.");
-	printf("TTT Loaded database..");
+		die("Failed to load database.",conn);
+	printf("TTT Loaded database.. \n");
 }
 
 struct Connection *Database_open(const char *filename, char mode)
 {
 	struct Connection *conn = malloc(sizeof(struct Connection));
 	if (!conn)
-		die("Memory error");
+		die("Memory error",conn);
 	conn->db = malloc(sizeof(struct Database));
 	if (mode == 'c'){
 		conn->file = fopen(filename,"w");
 	} else {
 		conn->file = fopen(filename, "r+");
-
 		if (conn->file)
 			Database_load(conn);
 	}
@@ -82,22 +87,22 @@ void Database_close(struct Connection *conn)
 void Database_write(struct Connection *conn)
 {
 	//what is rewind
-	printf("TTT Starting to write to database...");
+	printf("TTT Starting to write to database... \n");
 	rewind(conn->file);
 	int rc = fwrite(conn->db,sizeof(struct Database),1,conn->file);
 
 	if (rc != 1)
-		die("Failed to write database.");
+		die("Failed to write database.",conn);
 
 	//What is fflush
 	rc = fflush(conn->file);
 	if (rc == -1)
-		die("Cannot flush database.");
+		die("Cannot flush database.",conn);
 }
 
 void Database_create(struct Connection *conn)
 {
-	printf("TTT Starting to create a database...");
+	printf("TTT Starting to create a database... \n");
 	int i = 0;
 	for (i = 0; i < MAX_ROWS; i++){
 		//make a prototype to initialize it
@@ -110,18 +115,18 @@ void Database_create(struct Connection *conn)
 void Database_set(struct Connection *conn, int id, const char *name, const char *email){
 	struct Address *addr = &conn->db->rows[id];
 	if (addr->set)
-		die("alrady set, delete it first.");
+		die("alrady set, delete it first.",conn);
 
 	addr->set = 1;
 	//WARNING: bug, read the "How to break It" and fix this
 	char *res = strncpy(addr->name, name,MAX_DATA);
 	//demonstrate the strncpy bug
 	if (!res)
-		die("Name copy failed.");
+		die("Name copy failed.",conn);
 
 	res = strncpy(addr->email,email,MAX_DATA);
 	if (!res)
-		die("Email copy failed");
+		die("Email copy failed",conn);
 }
 
 void Database_get(struct Connection *conn, int id)
@@ -130,7 +135,7 @@ void Database_get(struct Connection *conn, int id)
 	if(addr->set){
 		Address_print(addr);
 	} else {
-		die("ID is not set");
+		die("ID is not set",conn);
 	}
 }
 
@@ -156,41 +161,46 @@ void Database_list(struct Connection *conn)
 
 
 int main(int argc, char *argv[]){
+		printf("TTT Address - %d \n",sizeof(struct Address));
+		printf("TTT Database - %d \n",sizeof(struct Database));
+		printf("TTT Connection - %d \n",sizeof(struct Connection));
 		if (argc < 3)
-			die("USAGE: ex17 <dbfile> <action> [action params]");
+			die("USAGE: ex17 <dbfile> <action> [action params]",NULL);
 
-		printf("File Name..");	
+		char *test = "Hello World";
+		printf("Testing ... %s \n",test);
 		char *filename = argv[1];
-		printf("Action..");
-		char action = argv[2][0];
+		printf("File Name.. %s \n",filename);	
+		
+		char action =  (char) argv[2][0];
+		printf("Action.. %c \n",action);
 		printf("Connection.");
 		struct Connection *conn =  Database_open(filename, action);
 		int id =0;
 
 		if (argc > 3) id = atoi(argv[3]);
-		if (id >= MAX_ROWS) die("There is not many record.");
+		if (id >= MAX_ROWS) die("There is not many record.",conn);
 
-		printf("Going into switch..");
+		printf("Going into switch.. \n");
 		switch (action) {
 			case 'c':
-				printf("TTT Inside calling crear!");
 				Database_create(conn);
 				Database_write(conn);
 				break;
 			case 'g':
 				if (argc !=4)
-					die("Need an id to get");
+					die("Need an id to get",conn);
 				Database_get(conn, id);
 				break;
 			case 's':
 				if (argc != 6)
-					die("Need id, name, email to set.");
+					die("Need id, name, email to set.",conn);
 				Database_set(conn, id, argv[4], argv[5]);
 				Database_write(conn);
 				break;
 			case 'd':
 				if (argc != 4)
-					die (" Need ID to delete");
+					die (" Need ID to delete",conn);
 				Database_delete(conn, id);
 				Database_write(conn);
 				break;
@@ -198,7 +208,7 @@ int main(int argc, char *argv[]){
 				Database_list(conn);
 				break;
 			default:
-				die("Invalid action: c=creare, g=get,s=set,d=del,l=list");		
+				die("Invalid action: c=creare, g=get,s=set,d=del,l=list",conn);		
 		}
 		Database_close(conn);
 	return 0;
