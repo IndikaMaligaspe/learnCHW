@@ -161,9 +161,9 @@ void Database_list(struct Connection *conn)
 
 
 int main(int argc, char *argv[]){
-		printf("TTT Address - %d \n",sizeof(struct Address));
-		printf("TTT Database - %d \n",sizeof(struct Database));
-		printf("TTT Connection - %d \n",sizeof(struct Connection));
+		printf("TTT Address - %ld \n",sizeof(struct Address));
+		printf("TTT Database - %ld \n",sizeof(struct Database));
+		printf("TTT Connection - %ld \n",sizeof(struct Connection));
 		if (argc < 3)
 			die("USAGE: ex17 <dbfile> <action> [action params]",NULL);
 
