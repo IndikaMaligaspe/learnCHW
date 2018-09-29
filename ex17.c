@@ -189,7 +189,7 @@ struct Address *find_by_name(const char *name, struct Connection *conn)
 			return cur;
 		}
 	}
-	die("No recodrds found !!\n");
+	die("No recodrds found !!\n",conn);
 	return NULL;
 }
 
