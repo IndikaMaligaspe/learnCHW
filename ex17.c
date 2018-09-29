@@ -189,6 +189,8 @@ struct Address *find_by_name(const char *name, struct Connection *conn)
 			return cur;
 		}
 	}
+	die("No recodrds found !!\n");
+	return NULL;
 }
 
 int main(int argc, char *argv[]){
