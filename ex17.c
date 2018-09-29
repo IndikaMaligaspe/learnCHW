@@ -162,11 +162,12 @@ void Database_list(struct Connection *conn)
 void Database_find(struct Connection *conn, const char *field, const char *value)
 {
 
-	if  (strcmp(field,"id") != 0)
+	printf(" searching for field - %s , with value - %s",field,value);
+	if  (strcmp(field,"id") == 0)
 		printf ("search by id \n");
-	else if (strcmp(field,"name") != 0)
+	else if (strcmp(field,"name") == 0)
 		printf ("search by name \n");
-	else if (strcmp(field,"email") != 0)
+	else if (strcmp(field,"email") == 0)
 		printf("search by email \n");
 	else
 		printf("Field %s not found in database \n", field);		
@@ -225,6 +226,7 @@ int main(int argc, char *argv[]){
 					die("Need id or name or email to seearch.",conn);
 				Database_find(conn, argv[3], argv[4]);
 				Database_write(conn);	
+				break;
 			default:
 				die("Invalid action: c=creare, g=get,s=set,d=del,l=list",conn);		
 		}
