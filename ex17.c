@@ -162,11 +162,11 @@ void Database_list(struct Connection *conn)
 void Database_find(struct Connection *conn, char *field, char *value)
 {
 
-	if  (field != "id")
+	if  (strcmp(field,"id") != 0)
 		printf ("search by id \n");
-	else if (field != "name")
+	else if (strcmp(field,"name") != 0)
 		printf ("search by name \n");
-	else if (field != "email")
+	else if (strcmp(field,"email") != 0)
 		printf("search by email \n");
 	else
 		printf("Field %s not found in database \n",*field);		
