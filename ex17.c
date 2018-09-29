@@ -159,7 +159,7 @@ void Database_list(struct Connection *conn)
 	}
 }
 
-void Database_find(struct Connection *conn, char *field, char *value)
+void Database_find(struct Connection *conn, const char *field, const char *value)
 {
 
 	if  (strcmp(field,"id") != 0)
