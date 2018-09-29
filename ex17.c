@@ -169,7 +169,7 @@ void Database_find(struct Connection *conn, const char *field, const char *value
 	else if (strcmp(field,"email") != 0)
 		printf("search by email \n");
 	else
-		printf("Field %s not found in database \n",*field);		
+		printf("Field %s not found in database \n", field);		
 
 }
 
