@@ -159,6 +159,19 @@ void Database_list(struct Connection *conn)
 	}
 }
 
+void Database_find(struct Connection *conn, char *field, char *value)
+{
+
+	if  (field != "id")
+		printf ("search by id \n");
+	else if (field != "name")
+		printf ("search by name \n");
+	else if (field != "email")
+		printf("search by email \n");
+	else
+		printf("Field %s not found in database \n",*field);		
+
+}
 
 int main(int argc, char *argv[]){
 		printf("TTT Address - %ld \n",sizeof(struct Address));
@@ -178,7 +191,7 @@ int main(int argc, char *argv[]){
 		struct Connection *conn =  Database_open(filename, action);
 		int id =0;
 
-		if (argc > 3) id = atoi(argv[3]);
+		if ((argc > 3) && (action != 'f')) id = atoi(argv[3]);
 		if (id >= MAX_ROWS) die("There is not many record.",conn);
 
 		printf("Going into switch.. \n");
@@ -207,6 +220,11 @@ int main(int argc, char *argv[]){
 			case 'l':
 				Database_list(conn);
 				break;
+			case 'f':
+				if (argc != 5)
+					die("Need id or name or email to seearch.",conn);
+				Database_find(conn, argv[3], argv[4]);
+				Database_write(conn);	
 			default:
 				die("Invalid action: c=creare, g=get,s=set,d=del,l=list",conn);		
 		}
