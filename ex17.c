@@ -31,7 +31,7 @@ struct Connection
 };
 
 void Database_close(struct Connection *conn);
-struct Address *find_by_id(const int *id, struct Connection *conn);
+struct Address *find_by_id(int id, struct Connection *conn);
 struct Address *find_by_name(const char *name, struct Connection *conn);
 struct Address *find_by_email(const char *email, struct Connection *conn);
 
@@ -167,11 +167,11 @@ void Database_find(struct Connection *conn, const char *field, const char *value
 
 	printf(" searching for field - %s , with value - %s \n",field,value);
 	if  (strcmp(field,"id") == 0){
-		Address_print(find_by_name(value, conn));
+		Address_print(find_by_id(atoi(value), conn));
 	}else if (strcmp(field,"name") == 0){
 		Address_print(find_by_name(value, conn));
 	}else if (strcmp(field,"email") == 0){
-		Address_print(find_by_name(value, conn));
+		Address_print(find_by_email(value, conn));
 	}else{
 		printf("Field %s not found in database \n", field);		
 
@@ -180,13 +180,13 @@ void Database_find(struct Connection *conn, const char *field, const char *value
 
 }
 
-struct Address *find_by_id(const int *id, struct Connection *conn)
+struct Address *find_by_id(int id, struct Connection *conn)
 {
 	int i =0;
 	struct Database *db = conn->db;
 	for ( i = 0; i<MAX_ROWS; i++){
 		struct Address *cur = &db->rows[i];
-		if ( cur->id == *id ){
+		if ( cur->id == id ){
 			return cur;
 		}
 	}
