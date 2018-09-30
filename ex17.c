@@ -185,7 +185,8 @@ struct Address *find_by_name(const char *name, struct Connection *conn)
 	struct Database *db = conn->db;
 	for ( i = 0; i<MAX_ROWS; i++){
 		struct Address *cur = &db->rows[i];
-		if (strcmp(cur->name,*name)==0){
+		printf("Data base rec -> %s,  passsed in -> %s \n",cur->name,name);
+		if (strcmp(cur->name,name)==0){
 			return cur;
 		}
 	}
