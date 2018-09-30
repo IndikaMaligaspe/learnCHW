@@ -31,7 +31,7 @@ struct Connection
 };
 
 void Database_close(struct Connection *conn);
-struct Address *find_by_id(const char *id, struct Connection *conn);
+struct Address *find_by_id(const int *id, struct Connection *conn);
 struct Address *find_by_name(const char *name, struct Connection *conn);
 struct Address *find_by_email(const char *email, struct Connection *conn);
 
@@ -180,13 +180,13 @@ void Database_find(struct Connection *conn, const char *field, const char *value
 
 }
 
-struct Address *find_by_id(const char *id, struct Connection *conn)
+struct Address *find_by_id(const int *id, struct Connection *conn)
 {
 	int i =0;
 	struct Database *db = conn->db;
 	for ( i = 0; i<MAX_ROWS; i++){
 		struct Address *cur = &db->rows[i];
-		if (strcmp(cur->id,id)==0){
+		if ( cur->id == *id ){
 			return cur;
 		}
 	}
@@ -214,7 +214,7 @@ struct Address *find_by_email(const char *email, struct Connection *conn)
 	struct Database *db = conn->db;
 	for ( i = 0; i<MAX_ROWS; i++){
 		struct Address *cur = &db->rows[i];
-		if (strcmp(cur->email,name)==0){
+		if (strcmp(cur->email,email)==0){
 			return cur;
 		}
 	}
