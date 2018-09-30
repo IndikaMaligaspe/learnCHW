@@ -168,7 +168,7 @@ void Database_find(struct Connection *conn, const char *field, const char *value
 		printf ("search by id \n");
 	}else if (strcmp(field,"name") == 0){
 		printf ("search by name \n");
-		Address_print(find_by_name(field, conn));
+		Address_print(find_by_name(value, conn));
 	}else if (strcmp(field,"email") == 0){
 		printf("search by email \n");
 	}else{
