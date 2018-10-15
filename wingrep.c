@@ -3,21 +3,8 @@
 #include <stdlib.h>
 #include "dbg.h"
 
-#define BUFF_SIZE 200
-char * getline(char **line , FILE *stream);
-
-
-// struct FileList{
-// 	char *filename;
-// 	char *matches[];
-// 	int isFound;
-
-// };
-
-// struct file{
-// 	File *FILE;
-// 	struct FileList *file_list;
-// };
+#define BUFF_SIZE 256
+int getline(char **line , FILE *stream);
 
 
 
@@ -28,12 +15,13 @@ int read_and_find_string(char *file_name, char *find_what)
 	FILE *file = fopen(file_name,"r");
 	check(file,"File not found!");
 	char *line= NULL;
-    size_t len = 0;
+    int len = 0;
     // char *read ;
 	//Get the size of the file
-	
-	while((line = getline(&line ,file)) != NULL){
+	line = malloc(BUFF_SIZE);
+	while((len = getline(&line ,file)) != -1){
 		printf("%s",line);
+		fseek(file,len,0);
 	}
 
 	fclose(file);
@@ -46,28 +34,37 @@ error:
 }
 
 
-char * getline(char **line , FILE *stream)
+int getline(char **line , FILE *stream)
 {
-	int c = fgetc(stream);
-	char buffer[1];
-	if (stream == '\0')
-		return NULL;
+  char *_line = NULL;
+  char c;
+  if (stream==NULL)
+  	return -1;
+  c = fgetc(stream);
+  if (c=='\0')
+  	return -1;
+  if (c == '\n')
+  	return -1;
+  if (c == EOF)
+  	return -1;
 
-	if (c == EOF)
-		return NULL;
-    line = malloc(sizeof(char));
-	while( c != EOF){
-		c = fgetc(stream);
-		if (c == '\0')
-			return NULL;
-		buffer[0] = c;
-		int size  = (strlen(*line) + 8);
-		line = realloc(*line,size);
-		strcat(*line,buffer);
-		if (c == '\n')
-			return *line;
-	}
-	return *line;
+  int buf_size = 0;	 
+  char buffer[1];	
+  _line = malloc(BUFF_SIZE);
+  while (c != EOF){
+  	buffer[0] = (char) c;
+    strcpy(_line,buffer);
+    buf_size++;
+    if (c == '\n'){
+    	printf("************************\n");
+    	printf("%s", _line);
+    	return -1;
+    }
+    	
+
+    c = fgetc(stream);
+  }
+  return -1;
 }
 
 int main(int argc , char *argv[])
