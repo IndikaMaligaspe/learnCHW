@@ -4,20 +4,108 @@
 		"selected_items":
 		[
 			[
+				"line_",
+				"line_size"
+			],
+			[
+				"l",
+				"line_struct"
+			],
+			[
+				"bu",
+				"buf_len"
+			],
+			[
+				"str",
+				"stream"
+			],
+			[
+				"file",
+				"file"
+			],
+			[
+				"de",
+				"debug"
+			],
+			[
+				"line",
+				"line_size"
+			],
+			[
+				"re",
+				"read_line"
+			],
+			[
+				"rea",
+				"read_line"
+			],
+			[
+				"size",
+				"sizeof"
+			],
+			[
+				"du",
+				"duff_devuce"
+			],
+			[
+				"scp",
+				"scope_demo"
+			],
+			[
+				"scope",
+				"scope_demo"
+			],
+			[
+				"THE",
+				"THE_SIZE"
+			],
+			[
+				"test_che",
+				"test_check_debug"
+			],
+			[
+				"test_log_",
+				"test_log_err"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"__",
+				"__VA_ARGS__"
+			],
+			[
+				"print",
+				"printf	printf …"
+			],
+			[
+				"bubble",
+				"bubble_sort"
+			],
+			[
+				"test",
+				"test_sorting"
+			],
+			[
+				"s",
+				"sizeof"
+			],
+			[
+				"fim",
+				"find_by_name"
+			],
+			[
+				"Addres",
+				"Address_print"
+			],
+			[
 				"Data",
 				"Database_close"
 			],
 			[
-				"file",
-				"filename"
-			],
-			[
 				"rows",
 				"MAX_ROWS"
-			],
-			[
-				"str",
-				"struct	struct"
 			],
 			[
 				"MA",
@@ -30,10 +118,6 @@
 			[
 				"d",
 				"db"
-			],
-			[
-				"print",
-				"print_Person"
 			],
 			[
 				"pr",
@@ -55,6 +139,54 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "dbg.h",
+			"settings":
+			{
+				"buffer_size": 1070,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Makefile",
+			"settings":
+			{
+				"buffer_size": 884,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wingrep.c",
+			"settings":
+			{
+				"buffer_size": 1450,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ex23.c",
+			"settings":
+			{
+				"buffer_size": 2134,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "testsizeof.c",
+			"settings":
+			{
+				"buffer_size": 538,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ex19.c",
+			"settings":
+			{
+				"buffer_size": 1789,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -84,15 +216,24 @@
 	},
 	"file_history":
 	[
+		"/C/workspace/Learning/c/ex17.c",
+		"/C/workspace/Learning/c/ex22.c",
+		"/C/workspace/Learning/c/ex23",
+		"/C/workspace/Learning/c/ex19.c",
+		"/C/workspace/Learning/c/ex23.c",
+		"/C/workspace/Learning/c/wingrep",
+		"/C/workspace/Learning/c/ex22.h",
+		"/C/workspace/Learning/c/Makefile",
+		"/C/workspace/Learning/c/ex22_main.c",
+		"/C/workspace/Learning/c/ex18.c",
+		"/C/workspace/Learning/c/.gitignore",
 		"/C/workspace/Bonotel/rezg-bonotel-xml-search/rezg-bonotel-xml-search-connector-utility/.gitignore",
 		"/C/workspace/Bonotel/rezg-bonotel-xml-search/rezg-bonotel-xml-search-connector-utility/src/main/java/bonotel/server/common/AuthToken.java",
 		"/C/workspace/Bonotel/rezg-bonotel-xml-search/rezg-bonotel-xml-search-connector-utility/src/main/java/bonotel/server/common/ClearStaticVariables.java",
 		"/C/workspace/Bonotel/rezg-bonotel-xml-search/rezg-bonotel-xml-search-core/src/main/java/bonotel/server/search/core/ExternalHotelSearch.java",
 		"/C/workspace/Bonotel/rezg-bonotel-xml-search/rezg-bonotel-xml-search-connector-utility/src/main/java/bonotel/server/common/ServiceData.java",
 		"/C/workspace/Learning/security_essentials.txt",
-		"/C/workspace/Learning/c/ex17.c",
 		"/C/workspace/Learning/c/TestMemory.java",
-		"/C/workspace/Learning/c/.gitignore",
 		"/C/workspace/Learning/c/ex16_extra.c",
 		"/C/workspace/Learning/c/ex16.c",
 		"/C/workspace/Learning/c/ex1.c",
@@ -202,16 +343,7 @@
 		"/C/UbuntuShare/Pluralsight - Hands-on Ansible/Exercise files/handsonansible/6-hands-on-ansible-m6-exercise-files/templates/httpd.j2",
 		"/C/UbuntuShare/Pluralsight - Hands-on Ansible/Exercise files/handsonansible/6-hands-on-ansible-m6-exercise-files/templates/index.j2",
 		"/C/UbuntuShare/Pluralsight - Hands-on Ansible/Exercise files/handsonansible/6-hands-on-ansible-m6-exercise-files/web_db.yaml",
-		"/C/UbuntuShare/Pluralsight - Hands-on Ansible/Exercise files/handsonansible/7-hands-on-ansible-m7-exercise-files/exercise_7.1/webservers.yml",
-		"/C/Users/Indika/Downloads/alarm.txt",
-		"/C/Projects/Profesional/Key Projects/Bonotel/Incidents/20-12-2015-ONS/httpd-balancer.conf",
-		"/C/Projects/Profesional/Key Projects/Bonotel/Incidents/20-12-2015-ONS/server_bc_app1_n1_ws0.txt",
-		"/C/Projects/Profesional/Key Projects/Bonotel/Incidents/20-12-2015-ONS/server.txt",
-		"/C/Users/Indika/Documents/id_rsa/id_rsa",
-		"/C/Users/Indika/Documents/id_rsa/id_rsa.pub",
-		"/C/Python/Suppoort/setuptools.py",
-		"/C/Projects/Profesional/Key Projects/Bonotel/Incidents/20-12-2015-ONS/hapgproxy.cfg",
-		"/C/Python/Suppoort/pip.py"
+		"/C/UbuntuShare/Pluralsight - Hands-on Ansible/Exercise files/handsonansible/7-hands-on-ansible-m7-exercise-files/exercise_7.1/webservers.yml"
 	],
 	"find":
 	{
@@ -230,6 +362,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"0",
+			"buffer",
+			"deb",
+			"scan",
+			"Database_open",
+			"strerror",
+			"Database_write",
+			"Starting to write to",
+			"Database_open",
+			"Database_set",
+			"Database_close",
+			"die",
 			"buildAvailabilityMap",
 			"mappingMap",
 			"resusltsList",
@@ -345,14 +489,7 @@
 			"{{",
 			"local",
 			"framework",
-			"000556a6d58711e58f3f56002613da16",
-			"zc",
-			"libgda",
-			"Please find the below requested IPs\n10.209.34.29",
-			"104.130.33.253",
-			"lb",
-			"load",
-			"time"
+			"000556a6d58711e58f3f56002613da16"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -390,8 +527,170 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "dbg.h",
+					"settings":
+					{
+						"buffer_size": 1070,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								146,
+								151
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Makefile",
+					"settings":
+					{
+						"buffer_size": 884,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								463,
+								463
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wingrep.c",
+					"settings":
+					{
+						"buffer_size": 1450,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								564,
+								564
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "ex23.c",
+					"settings":
+					{
+						"buffer_size": 2134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1086,
+								1086
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 840.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "testsizeof.c",
+					"settings":
+					{
+						"buffer_size": 538,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								214,
+								214
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "ex19.c",
+					"settings":
+					{
+						"buffer_size": 1789,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								471,
+								471
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -401,7 +700,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 30.0
 	},
 	"layout":
 	{
@@ -426,6 +725,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 24.0
+	},
 	"replace":
 	{
 		"height": 62.0
@@ -447,10 +750,10 @@
 		],
 		"width": 0.0
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 286.0,
+	"side_bar_width": 112.0,
 	"status_bar_visible": true
 }
