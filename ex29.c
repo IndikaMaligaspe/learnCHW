@@ -18,11 +18,11 @@ int main(int argc, char *argv[])
 
 
 	lib_function func = dlsym(lib, func_to_run);
-	check(func != NULL, "Did not find %s funcition in the library %s :%s ",lib_file,dlerror());
+	// check(func != NULL, "Did not find %s funcition in the library %s :%s ",lib_file,dlerror());
 	rc = func(data);
 	// check(rc == 0, "Function %s reurn %d for data: %s". func_to_run,rc,data);
 	rc = dlclose(lib);
-	check(rc == 0, "Faled to close %s",lib_file);
+	// check(rc == 0, "Faled to close %s",lib_file);
 
 	return 0;
 
