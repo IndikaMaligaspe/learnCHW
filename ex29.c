@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	rc = func(data);
 	// check(rc == 0, "Function %s reurn %d for data: %s". func_to_run,rc,data);
 	if (rc == 0){
-		printf("Function %s reurn %d for data: %s". func_to_run,rc,data);
+		printf("Function %s reurn %d for data: %s", func_to_run,rc,data);
 	}
 	rc = dlclose(lib);
 	// check(rc == 0, "Faled to close %s",lib_file);
