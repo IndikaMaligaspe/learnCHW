@@ -4,7 +4,7 @@ else
 WINDOWS := no
 endif
 
-CFLAGS=-g O2 -Wall -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)
+CFLAGS=-g -O2 -Wall -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)
 LLIBS=-ldl $(OPTLIBS)
 PREFIX?=/usr/local
 
@@ -24,7 +24,7 @@ dev: CFLAGS=-g -Wall -Isrc -Wall -Wextra $(OPTFLAGS)
 
 dev: all
 
-$(TARGET): CFLAGS += fPIC
+$(TARGET): CFLAGS += -fPIC
 $(TARGET): build $(OBJECTS)
 	ar rcs $@ $(OBJECTS)
 	ranlib $@
@@ -40,7 +40,7 @@ build:
 .PHONY: tests
 tests: CFLAGS += $(TARGET)
 tests: $(TESTS) 
-	sh ./tests/runtetsts.sh
+	sh ./tests/runtests.sh
 
 #The Cleaner
 clean:
