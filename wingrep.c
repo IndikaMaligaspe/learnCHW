@@ -1,25 +1,25 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "dbg.h"
+// #include "dbg.h"
 
 #define BUFF_SIZE 256
-int getline(char **line , FILE *stream);
 
-
+int getln(char **line , FILE *stream);
 
 int read_and_find_string(char *file_name, char *find_what)
 {
-	check((file_name != NULL), "File name can not be empty");
-	check((find_what != NULL), "Empty String to search");
+//	check((file_name != NULL), "File name can not be empty");
+
+//	check((find_what != NULL), "Empty String to search");
 	FILE *file = fopen(file_name,"r");
-	check(file,"File not found!");
+//	check(file,"File not found!");
 	char *line= NULL;
     int len = 0;
     // char *read ;
 	//Get the size of the file
 	line = malloc(BUFF_SIZE);
-	while((len = getline(&line ,file)) != -1){
+	while((len = getln(&line ,file)) != -1){
 		printf("%s \n",line);
     strcpy(line,"\n");
 	}
@@ -33,7 +33,7 @@ error:
 }
 
 
-int getline(char **line , FILE *stream)
+int getln(char **line , FILE *stream)
 {
   char line_buffer[BUFF_SIZE] = {""};
   char c;

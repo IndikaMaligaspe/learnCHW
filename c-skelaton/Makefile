@@ -4,8 +4,8 @@ else
 WINDOWS := no
 endif
 
-CFLAGS=-g -O2 -Wall -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)
-LLIBS=-ldl $(OPTLIBS)
+CFLAGS=-g -O2 -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)
+LIBS=-ldl $(OPTLIBS)
 PREFIX?=/usr/local
 
 SOURCES=$(wildcard src/**/*.c src/*.c)
@@ -20,7 +20,7 @@ SO_TARGET=$(patsubst %.a,%.so,$(TARGET))
 #The Target build
 all: $(TARGET) $(SO_TARGET) tests
 
-dev: CFLAGS=-g -Wall -Isrc -Wall -Wextra $(OPTFLAGS)
+dev: CFLAGS=-g  -Isrc  $(OPTFLAGS)
 
 dev: all
 
