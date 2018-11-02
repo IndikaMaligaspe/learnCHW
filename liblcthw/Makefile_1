@@ -1,12 +1,6 @@
-#ifeq ($(shell echo "check_quotes"), "check_quotes")
-#WINDOWS := yes
-#else
-#WINDOWS := no
-#endif
-
-CFLAGS=-g -O2 -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)
+CFLAGS=-g -O2 -Wall -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)
 LIBS=-ldl $(OPTLIBS)
-PREFIX?=/usr/local
+PREFIX?=/usr/src/learnCHW
 
 SOURCES=$(wildcard src/**/*.c src/*.c)
 OBJECTS=$(patsubst %.c,%.o,$(SOURCES))
@@ -20,7 +14,7 @@ SO_TARGET=$(patsubst %.a,%.so,$(TARGET))
 #The Target build
 all: $(TARGET) $(SO_TARGET) tests
 
-dev: CFLAGS=-g  -Isrc  $(OPTFLAGS)
+dev: CFLAGS=-g  -Wall -Isrc -Wall -Wextra  $(OPTFLAGS)
 
 dev: all
 
