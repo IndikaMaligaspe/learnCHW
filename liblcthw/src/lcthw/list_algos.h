@@ -15,6 +15,15 @@ typedef struct Linked_List {
 } Linked_List;
 
 Linked_List *LL_Create();
-void LL_deleet(Linked_List *Llist);
+void LL_Clear(Linked_List *list);
+void LL_delete(Linked_List** list);
+void LL_push(Linked_List *list, char *word);
+void LL_print(Linked_List *list);
+char *LL_pop(Linked_List *list);
+
+#define LIST_FOREACH(L,S,M,V) LL_Node * _node = NULL; \
+  LL_Node *V = NULL; \
+  for (V = _node = L->S; _node != NULL; _node = node->M)
+
 
 #endif
